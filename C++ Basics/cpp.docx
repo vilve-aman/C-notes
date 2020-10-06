@@ -1,0 +1,212 @@
+C++ Basics
+
+1. Character Set It is a set of valid characters that a language can recognise. A
+character set represents following characters:
+(i) Alphabet A to Z, a to z
+(ii) Digits → 0 to 9
+(iii) Punctuators or Special characters +- */ 01 } @$""; etc.
+(iv) Formatting characters backspace, horizontal tab vertical tab, form feed
+     and carriage return (-).
+(v) Other characters like 256 ASCII characters as data or literals.
+
+
+2. Tokens It is the smallest element of a C++ program that is meaningful to the compiler. The programmer can write a program by using tokens.
+
+C++ compiler recognises these kinds of tokens:
+
+(i) Identifiers : An identifier is a sequence of letters and digits. The term identifiers are used to describe the name of constants, variables, functions etc. The first character must be a letter including the underscore ( _ ). Upper and lower case letters are different. No special symbols other than underscore can be used in an identifier
+
+
+(ii) Keywords : Keywords (also known as reserved or predefined words) have special meaning to the compiler and are always written or typed in lower case. These are reserved by the language for special purposes and identifiers.cannot be redefined to use as e.g. auto, break, if, etc.
+
+
+(iii) Literals : Literals or constants are those tokens whose value do not change during the program execution. The various literals are integer constants, character constants, floating constants and string constants.
+
+
+
+
+Operators
+
+Operator is the term (symbol) used to describe the action to be taken between one or more data expressions. An identifier or a constant used with an operator is called an operand.
+
+Some operators operate on a single operand are called unary operators. Some operators are indicated before operands are called prefix operators. The other operators indicated after operands are called postfix operators. Most operators are embedded between two operands are called binary operators. The operators that takes three operands are called ternary operators.
+
+
+The various operators in C++ are as follows:
+
+1. Arithmetic Operators 
+These operators are used to perform mathematical calculations. C++ provides following arithmetic operators:
+Addition
+     % 	Division
+Subtraction
+     *    Multiplication
+     %	Modulus (remainder of integer division)
+
+
+2. Assignment Operators 
+
+ An assignment operator is used to assign the value to a variable. e.g. a = 5
+The various assignment operators are:
+
+  Operators
+   Meaning
+=
+Assigns value on RHS to LHS. 
++=
+Value of RHS will be added to the Value of LHS and assign back to LHS.
+-=
+Value of RHS will be subtracted from the Value of LHS and assign back to LHS.
+
+
+*=
+Value of LHS will be multiplied by value of RHS and assign back to LHS.
+/=
+Value of LHS will be divided by value of RHS and assign back to LHS.
+%=
+The remainder will be stored back to LHS after division is carried out between LHS and RHS
+
+
+
+
+
+
+
+
+
+
+3. Increment/Decrement Operators
+
+Increment (++) and decrement (--) operators are called unary operators because they operate on single variable only. The increment operator (++) increments the value by 1. 
+++a ⇒ a = a +1 
+The decrement operator (--) decrements the value by 1.
+--a ⇒ a = a -1
+
+These operators are of two types:
+
+(i) Prefix increment/decrement The value incremented/decremented first, then the operation is performed.
+e.g. ++a or --a
+Let a = 4
+b =++a; means first increment the value of a' by 1, then 'b' takes the value of 'a'.
+Hence,  a = 5 and b = 5
+Now, b = --a; means first decrement the value of 'a' by 1, then 'b' takes the value of 'a'.
+ Hence, a = 4 and b = 4
+
+
+(ii) Postfix increment/decrement First the operations are performed and then value is incremented/decremented.
+e.g Let a++ or a-
+a = 3
+b = a++; means 'b' takes the value of 'a' and then 'a' is incremented by 1.
+Hence, a = 4 and b = 3
+Now, b = a -- means 'b' takes the value of 'a' and then 'a' is decremented by 1.
+Hence, a = 3 and b = 4
+
+
+
+
+4. Relational Operators
+
+The relational operators are used to test or compare the value of two operands. ie. between two variables or between a variable and a constant. If the condition is false, then the result is 0. If the condition is true, then the result is non-zero (1). 
+
+Various relational operators are as follows:
+
+Operators
+Meaning
+<
+Less than
+<=
+Less than or equal to
+>
+Greater than
+>=
+Greater than or equal to
+==
+Equal to
+!=
+Not equal to
+
+
+
+
+
+5. Logical Operators
+
+Logical operators are used to combined two or more relational operations or conditions. These are also called boolean operators because the test between values are reduced to either true or false, with zero(0) being false and one (1) being true.
+
+The logical operators are as follows:
+
+Operators
+Meaning
+&&
+AND 
+||
+OR
+!
+NOT
+
+
+(i) AND (&&) operator gives the result true, if both the conditions have the true value, otherwise gives the result false.
+
+ (ii) OR (II) operator gives the result true, if any one of the conditions or both the conditions are true, otherwise gives the result false
+
+(iii) NOT (!) operator gives the result true, if condition is false and vice-versa.
+
+
+6. Special Operators
+
+Some special operators are as follows:
+
+(i) Size of operator The sizeof operator returns the number of bytes required to represent a data type or variable.
+Syntax  : sizeof(data type) 
+     sizeof (variable)
+The data type can be standard or user defined. 
+e.g  sizeof (int)
+returns value 4
+
+(ii) Input/Output Operator 
+
+Input operator (">>") allows you to send input to your program, i.e. input coming from the user's terminal referred to as the standard input, is tied with the predefined iostream cin. e.g. to read the value of 'a' from standard input cin>>a; is used. It is also known as extraction or get from operator.
+
+ Output operator ("<<") allows you to receive output from your program, i.e. output directed to the user's terminal, referred to standard output, is tied with the predefined iostream cout, e.g. to print the value of 'a' cout<<a; is used. It is also known as insertion or put to operator.
+
+
+
+
+
+C++ Comments
+
+A comment is a text that the compiler ignores, but that is useful for programmers. Comments are normally used to annotate code for future reference. The compiler treats them as white space. C++ comment is written in one of the following ways:
+
+(i) The /* (slash, asterisk) characters, followed by any sequence of characters (including new lines), followed by the */ (asterisk, slash) characters is called multi line comment. 
+(ii) The // (two slashes) characters, followed by any sequence of characters is called a single line common. A new line not immediately preceded by a backslash terminates this form of comment.
+
+
+
+Data Types in C++
+
+Data types refer to the type of data used in the program. C++ supports a variety of data types and programmer can select the appropriate data type as per the need of the application.
+
+C++ supports following data types:
+
+(i) Built in Data Types These data types are known as basic or fundamental data types. These are the data types that are not composed of any other data type. These are already defined in compiler program.
+
+(ii) Derived Data Types These are the data types that are composed of fundamental data types. e.g. array, function, pointer, reference, class, structure, union and enumeration.
+
+(iii) User Defined Data Types are the data types that enable programmer to invent his/her own data types and define, what value it can take? Pe.g. class, structure, union, etc.
+
+
+
+Variables
+
+
+Variables are identifiers, which can hold value. And the value of variable can be manipulated during program execution, i.e in a program, we need to use values, which must be stored in memory cell. In order to refer to that value in our program, we give a name to memory cell. So, in order to use a variable in our program, first we need to declare a variable which means assigning a name to a memory location (or) reserve it.
+
+Secondary, we need to initialise it, i.e. we need to store some value in it.
+
+Syntax
+data-type variable-name: // variable 
+declaration variable-name=value; // initialisation
+e.g.
+int num:
+num = 2;
+ Variable may be declared as globally or locally.
+
