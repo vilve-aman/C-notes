@@ -3,3 +3,55 @@ C++ Notes for Youtube Channel (from book Arihant publications.)
 For Youtube Channel Highscooler
 
 
+
+
+Topic 1 Fundamentals
+
+C++ was developed by Bjarne Stroustrup at AT&T Bell Laboratories in the early 1980s. He combined the features of C and SIMULA 67 to form a more powerful language that could support the concepts of object oriented programming. C++ is an object oriented programming language that allows programmers to build large and complex applications in a useful and efficient way,
+
+Structure of C++ Program
+
+C++ program is a collection of functions The program also contains the list of library files included for adding the contents to the program, 
+Sample program in C++
+
+
+#include<iostream>
+
+Using namespace std;
+
+ int main ( )
+{
+
+cout <<” HI i am learning c++”>;
+
+return 0 ;
+ 
+}
+
+
+
+
+Description of above program is given below !
+
+#include<iostream>
+
+Here ,’#’ symbol is called preprocessor directives. It indicates which specified header files are included in the program Header files are special predefined files in C++ for some specified purpose. It contains the definitions of functions as well as object that is used in a program In the given program <iostream> is for input/output statements such as cin cout respectively.
+
+
+
+Int  main()
+
+C++ program consists of many functions, but main() is the most important function in C++. because it is the first execution part of a program. This function is also used to call other functions for execution. 'int ' means that function will return a value. By default, every function returns int value. Function will return one and only one value to other function. The return value can be further manipulated in other functions. User can also define the return type such as float, char or int.
+
+
+
+cout <<"HI i am learning c++";
+
+It is used to display the message on the output screen
+
+e.g. HI i am learning c++
+
+Would be displayed on the screen after the execution of the given program.
+
+
+
